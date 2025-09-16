@@ -1,0 +1,255 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #FBF3E3; /* Fondo principal */
+  color: #553518; /* Texto principal */
+}
+
+/* Encabezado */
+header {
+  background: #553518; /* Marrón oscuro */
+  color: #FBF3E3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #C29925; /* Dorado */
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header ul li a {
+  color: #FBF3E3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #C29925; /* Dorado al pasar */
+}
+
+/* Redes sociales en header */
+header .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+header .socials a i {
+  font-size: 1.5rem;
+  color: #C29925; /* Dorado */
+  transition: 0.3s;
+}
+
+header .socials a i:hover {
+  color: #FBF3E3;
+}
+
+/* Hero */
+.hero {
+  background: url('imagen1.png') no-repeat center/cover;
+  color: #FBF3E3;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #C29925; /* Dorado */
+  color: #553518;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #847C74; /* Gris oscuro */
+  color: #FBF3E3;
+}
+
+/* Menú */
+.menu {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #A79B8F; /* Gris cálido */
+}
+
+.menu h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #553518;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #FBF3E3;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #847C74; /* Hover gris oscuro */
+  color: #FBF3E3;
+}
+
+/* Galería */
+.gallery {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #847474; /* Gris más fuerte */
+  color: #FBF3E3;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #FBF3E3;
+}
+
+.gallery-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Nosotros */
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #FBF3E3;
+  color: #553518;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: #C29925;
+}
+
+/* Reservaciones */
+.reservas {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #A79B8F;
+  color: #FBF3E3;
+}
+
+.reservas h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: #FBF3E3;
+}
+
+.formulario input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #847C74;
+  font-size: 1rem;
+}
+
+/* Contacto */
+.contact {
+  padding: 3rem 2rem;
+  background: #847C74;
+  text-align: center;
+  color: #FBF3E3;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  color: #C29925;
+}
+
+/* Footer */
+footer {
+  background: #553518;
+  color: #FBF3E3;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header .socials {
+    justify-content: center;
+  }
+}
